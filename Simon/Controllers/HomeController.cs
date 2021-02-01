@@ -29,6 +29,7 @@ namespace Simon.Controllers
 
         public ActionResult Contact()
         {
+	
             return View();
         }
 
