@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
@@ -44,30 +45,48 @@ namespace Simon.Controllers
         [HttpPost]
         public ActionResult SendEnquiry(ContactUS objContactUS)
         {
+            
+using(SmtpClient smtpClient = new SmtpClient())
+{
+    var basicCredential = new NetworkCredential(ConfigurationManager.AppSettings["FromEmail"], ConfigurationManager.AppSettings["PassWord"]); 
+    using(MailMessage message = new MailMessage())
+    {
+        MailAddress fromAddress = new MailAddress(ConfigurationManager.AppSettings["FromEmail"]); 
 
-            MailMessage Msg = new MailMessage();
-            Msg.From = new MailAddress(ConfigurationManager.AppSettings["FromEmail"]);
+        smtpClient.Host = ConfigurationManager.AppSettings["HostName"];
+        smtpClient.UseDefaultCredentials = false;
+		smtpClient.Port = 25;
+        smtpClient.Credentials = basicCredential;
 
-            Msg.To.Add(ConfigurationManager.AppSettings["ToEmail"]);
-
-            Msg.Subject = ConfigurationManager.AppSettings["Subject"];
-
-            string appPath = Server.MapPath("~");
+        message.From = fromAddress;
+        message.Subject = ConfigurationManager.AppSettings["Subject"];
+        message.IsBodyHtml = true;
+         string appPath = Server.MapPath("~");
             string path = appPath + "EmailTemplates\\AdminEnquiryTemplate.html";
             string messageHtml = getMessage(path);
             messageHtml = messageHtml.Replace("#Name#", objContactUS.Name).Replace("#Email#", objContactUS.Phone).Replace("#Subject#", objContactUS.Address).Replace("#Message#", objContactUS.Message);
 
-            Msg.Body = messageHtml;
+            message.Body = messageHtml;
             System.IO.Stream stream = new System.IO.MemoryStream(System.Text.ASCIIEncoding.ASCII.GetBytes(Msg.Body));
             AlternateView alternate = new AlternateView(stream, new System.Net.Mime.ContentType("text/html"));
-            Msg.AlternateViews.Add(alternate);
-            SmtpClient smtp = new SmtpClient();
-            smtp.Host = ConfigurationManager.AppSettings["HostName"];
-            smtp.Port = 25;
-            smtp.Credentials = new System.Net.NetworkCredential("cms@cmsadmin.eu", ConfigurationManager.AppSettings["PassWord"]);
-            smtp.EnableSsl = true;
-            smtp.Send(Msg);
-            return RedirectToAction("Index");
+            message.AlternateViews.Add(alternate);
+        
+        message.To.Add(ConfigurationManager.AppSettings["ToEmail"]); 
+
+        try
+        {
+            smtpClient.Send(message);
+			Console.Write("send");
+        }
+        catch(Exception ex)
+        {
+            //Error, could not send the message
+            Console.Write(ex.Message);
+        }
+    }
+    }
+     return RedirectToAction("Index");
+          
 
         }
 
