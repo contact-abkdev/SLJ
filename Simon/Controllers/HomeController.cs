@@ -67,7 +67,7 @@ using(SmtpClient smtpClient = new SmtpClient())
             messageHtml = messageHtml.Replace("#Name#", objContactUS.Name).Replace("#Email#", objContactUS.Phone).Replace("#Subject#", objContactUS.Address).Replace("#Message#", objContactUS.Message);
 
             message.Body = messageHtml;
-            System.IO.Stream stream = new System.IO.MemoryStream(System.Text.ASCIIEncoding.ASCII.GetBytes(Msg.Body));
+            System.IO.Stream stream = new System.IO.MemoryStream(System.Text.ASCIIEncoding.ASCII.GetBytes(message.Body));
             AlternateView alternate = new AlternateView(stream, new System.Net.Mime.ContentType("text/html"));
             message.AlternateViews.Add(alternate);
         
