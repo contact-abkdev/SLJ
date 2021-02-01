@@ -1,0 +1,34 @@
+﻿@model Simon.Models.ContactUS
+
+<section class="feedback">
+    <div class="container">
+        <h2 class="section-title">get in touch</h2>
+        <span class="subtitle">Drop us a message, we would be happy to help.</span>
+        <div class="feedback-form">
+            @using (Html.BeginForm("SendEnquiry", "Home"))
+            {
+                <div class="row">
+                    <div class="columnSix">
+                        <div class="form-group">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name", required = "required" })
+                        </div>
+                        <div class="form-group">
+                            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Email", required = "required", type = "email" })
+                        </div>
+                        <div class="form-group">
+                            @Html.TextBoxFor(m => m.Address, new { @class = "form-control", placeholder = "Subject" })
+                        </div>
+                    </div>
+                    <div class="columnSix">
+                        <div class="form-group">
+                            @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Message", rows = "10", required = "required" })
+                        </div>
+                    </div>
+                    <div class="fb-submit">
+                        <button type="submit" class="btn btn-style" id="btnSubmitMain">send message</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,85 @@
+/* Body and General Styles Start
+-------------------------------------------------- */
+a:hover,
+.btn:hover,
+button:hover{
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+}
+
+/* Body and General Styles End
+-------------------------------------------------- */
+
+/* navbar Start 
+-------------------------------------------------- */
+
+/* navbar End 
+-------------------------------------------------- */
+
+/* header Start 
+-------------------------------------------------- */
+
+/* header End
+-------------------------------------------------- */
+
+/* Banner Start 
+-------------------------------------------------- */
+
+.suggestion-form .form-control{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+}
+
+/* Banner End
+-------------------------------------------------- */
+
+/* Content Start
+-------------------------------------------------- */
+.contact-home{
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(183,183,183,1);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(183,183,183,1);
+	-o-box-shadow: 0px 5px 8px 0px rgba(183,183,183,1);
+	-ms-box-shadow: 0px 5px 8px 0px rgba(183,183,183,1);
+	box-shadow: 0px 5px 8px 0px rgba(183,183,183,1);
+}
+
+.content-img img{
+	-webkit-box-shadow: 0px 15px 18px 5px rgba(183,183,183,1);
+	-moz-box-shadow: 0px 15px 18px 5px rgba(183,183,183,1);
+	-o-box-shadow: 0px 15px 18px 5px rgba(183,183,183,1);
+	-ms-box-shadow: 0px 15px 18px 5px rgba(183,183,183,1);
+	box-shadow: 0px 15px 18px 5px rgba(183,183,183,1);
+}
+
+.feedback .form-control{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+}
+
+/* Content End
+-------------------------------------------------- */
+
+
+/* Responsive Style Start 
+-------------------------------------------------- */
+@media(max-width:1199px){}
+
+@media(max-width:991px){}
+
+@media(max-width:767px){}
+
+@media(max-width:639px){}
+
+@media(max-width:479px){}
+
+/* Responsive Style End
+-------------------------------------------------- */

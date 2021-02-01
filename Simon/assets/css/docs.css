@@ -1,0 +1,268 @@
+/* Typography Start
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	src: url('../fonts/MyriadPro-Bold.eot');
+	src: url('../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Bold.woff') format('woff'),
+		url('../fonts/MyriadPro-Bold.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro Semibold';
+	src: url('../fonts/MyriadPro-Semibold.eot');
+	src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Semibold.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Semibold.woff') format('woff'),
+		url('../fonts/MyriadPro-Semibold.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Typography End
+-------------------------------------------------- */
+
+
+/* Body and General Styles Start
+-------------------------------------------------- */
+body{background: #ffffff;color: #86878b;font-family: 'Myriad Pro Regular';font-size: 14px; margin: 0;padding: 0;line-height: 20px;width: 100%;}
+
+h1{}
+h2,h3,h4,h5,h6{}
+ul,
+ol{margin:0;padding: 0;}
+img{max-width: 100%;}
+.btn{outline: none;}
+a:focus{outline: none !important;}
+a:hover,
+a:focus{text-decoration: none;}
+.logo{font-size: 24px;line-height: 28px;text-transform: uppercase;color: #ffffff;}
+.slj-text{font-size: 36px;line-height: 40px;text-transform: uppercase;color: #ffffff;margin:26px 0;}
+.content-title{font-size: 21px;color: #333333;text-transform: uppercase;font-family: 'Myriad Pro Bold';position: relative;margin:0 0 27px;padding: 0 0 28px;}
+.content-title::after{content: "";background: #8f443d;height: 3px;width: 47px;position: absolute;left: 0;bottom: 0;}
+.section-title{font-family: 'Raleway', sans-serif;color: #212121;font-size: 36px;line-height: 43px;text-transform: uppercase;font-weight: 300;position: relative;text-align: center;margin:0 0 34px;padding:24px 0;}
+.section-title::after{content: "";background: #8f443d;height: 3px;width: 47px;position: absolute;left: 0;bottom: 0;right:0;margin:0 auto;}
+.subtitle{font-family: 'Open Sans', sans-serif;font-size: 14px;line-height: 20px;color: #86878b;text-align: center;display: block;white-space: normal;}
+.btn-style{background: #8b1d12; font-family: 'Myriad Pro Semibold';color: #ffffff;font-size: 16px;padding:0 15px;height: 44px;line-height: 42px;text-transform: capitalize;border-radius: 8px;}
+.btn-style:hover,
+.btn-style:focus{background: #000000;color: #ffffff;}
+/* Body End
+-------------------------------------------------- */
+
+/* header Start 
+-------------------------------------------------- */
+.header{position: fixed;left: 0;right: 0;top: 0;width: 100%;z-index: 99;}
+.navbar-default{background: #000000;margin-bottom:0;border:none;border-radius: 0;}
+.navbar-brand{height: auto;}
+.navbar-header{padding: 6px 0;}
+.navbar-default .navbar-nav > li > a{font-family: 'Myriad Pro Semibold';color: #ffffff; text-transform: capitalize;}
+.navbar-nav > li{padding: 0 8px;}
+.navbar-nav > li > a{padding: 25px 8px;}
+
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover{color: #90443E;}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover{background-color: transparent;color: #90443E;}
+/* header End
+-------------------------------------------------- */
+
+/* Banner Start 
+-------------------------------------------------- */
+.banner{min-height: 738px;position: relative;padding: 140px 0 50px;}
+.banner::before{content: "";background: #000000;opacity: 0.5;position: absolute;left: 0;top:0;height: 100%;width: 100%;}
+.banner h1{font-size: 36px;line-height: 40px;color: #ffffff;text-transform: uppercase;position: relative;margin: 0;padding: 30px 0;}
+.banner h1::after{content: "";background: #8f443d;height: 3px;width: 47px;position: absolute;left:0;bottom: 0;}
+.banner h2{font-size: 32px;line-height: 35px;color: #ffffff;text-transform: uppercase;margin: 30px 0;}
+
+.suggestion-form{max-width: 360px;margin: 0 0 0 auto;}
+.suggestion-form form{padding: 30px 38px;background: #ffffff;}
+.suggestion-form h3{background:#f5f5f5; color: #333333;font-size: 20px;line-height: 24px;text-transform: capitalize;margin: 0;padding: 20px;text-align: center;font-family: 'Myriad Pro Bold';border-top-left-radius: 4px;border-top-right-radius: 4px;}
+.suggestion-form .btn{background:#8f443d;font-family: 'Myriad Pro Semibold';font-size: 15px;color: #ffffff;text-transform: capitalize;height: 53px;line-height: 53px;width: 100%;padding: 0 15px;}
+.suggestion-form .form-control{font-size:14px;font-family: 'Open Sans', sans-serif;border-width: 0 0 1px 0;border-style: none none solid none;border-color: transparent transparent #d6d6d6 transparent;border-radius: 0;resize: none;}
+/* Banner End
+-------------------------------------------------- */
+
+/* Content Start
+-------------------------------------------------- */
+.contact-home{padding: 14px 0 20px;position: relative;}
+.contact-home h3{font-family: 'Myriad Pro Bold';font-size: 20px;line-height: 24px;color: #333333;text-transform: capitalize;margin:5px 0;}
+.contact-home p{margin:0;}
+.contact-home ul{margin:0;padding: 0;}
+.ch-left{text-align: left;}
+.ch-middle{padding:15px 0 0;text-align: center;}
+.ch-right{text-align: right;}
+.ch-middle ul li{display: inline-block;padding:0 13px;}
+.ch-middle ul li a{display: block;}
+.ch-right li{list-style-type: none;}
+
+.aboutus-home{background: #f5f5f5;}
+.renovation-area{background: #f5f5f5;}
+.landscaping-area{background: #f5f5f5;}
+.renovation-area,
+.landscaping-area,
+.building-area{padding: 136px 0;}
+.aboutus-home,
+.service-home{padding: 136px 0;}
+.renovation-area .col-md-6,
+.landscaping-area .col-md-6,
+.building-area .col-md-6,
+.aboutus-home .col-md-6,
+.service-home .col-md-6{padding: 0 30px;}
+.renovation-area .row,
+.landscaping-area .row,
+.building-area .row,
+.aboutus-home .row,
+.service-home .row{margin:0 -30px;}
+.content-text{padding: 30px 0;}
+.content-text p{margin-bottom: 24px;}
+.content-text ul{padding:0;margin:0;}
+.content-text ul li{display: block;font-size: 16px;line-height: 20px;color: #86878b;list-style-type: none;position: relative;padding-left: 16px;}
+.content-text ul li::before{content: "";background: #8f443d;height:2px;position: absolute;left:0;margin-top:10px;top:0;width:10px;}
+.content-text .btn{margin-top: 10px;}
+.content-img{text-align: right;}
+.content-img a{display: inline-block;}
+.img-left{text-align: left !important;}
+
+.contact-area{background: #f5f5f5;padding: 68px 0 65px;}
+.ca-left{padding-top: 32px;}
+.ca-left p{font-size:16px;color: #86878b;margin-bottom: 24px;}
+.ca-right{text-align: right;}
+.ca-right ul{padding:0;margin:0 0 23px;}
+.ca-right li{display: block;list-style-type:none;font-size: 16px;color: #86878b;font-family: 'Myriad Pro Semibold';}
+.ca-right a{display: inline-block;font-size: 16px;color: #86878b;font-family: 'Myriad Pro Semibold';}
+
+.why-choose-us{background: #f5f5f5; padding: 64px 0 92px;}
+.service-page .why-choose-us{background: #ffffff;}
+.choose-area{text-align: center;}
+.choose-area h2{font-family: 'Open Sans', sans-serif;font-size: 20px;line-height: 24px;color: #333333;text-transform: capitalize;font-weight: 700;margin:24px 0 54px;}
+.choose-area p{max-width: 245px;margin:0 auto;}
+.choose-img::before,
+.choose-img::after{content: "";display: inline-block;height: 100%;vertical-align: bottom;white-space: nowrap;}
+.choose-img{display: inline-block;white-space: nowrap;height:105px;vertical-align: bottom;}
+.choose-img img{vertical-align: bottom;}
+
+.service-banner{background: url('../images/bottom-banner.jpg') no-repeat;background-attachment: fixed;background-position: center center;background-size: cover;padding: 78px 0 24px;position: relative;}
+.service-banner::before{content: "";background:#000000;opacity: 0.5;position: absolute;left: 0;top: 0;height: 100%;width:100%;}
+.service-content{text-align: center;}
+
+.feedback{padding: 78px 0 73px;}
+.feedback .row{margin:0 -33px;}
+.columnSix{float: left;padding:0 33px;width: 50%;}
+.feedback .form-control{font-size:14px;font-family: 'Open Sans', sans-serif;border-width: 0 0 1px 0;border-style: none none solid none;border-color: transparent transparent #d6d6d6 transparent;border-radius: 0;resize: none;padding:6px 12px 0;}
+.feedback input[type="text"],
+.feedback input[type="email"]{height: 44px;}
+.feedback textarea{height: 160px;overflow-y: auto;}
+.fb-submit{display: inline-block;margin-top:35px;text-align: center;width: 100%;}
+.feedback-form{margin-top: 78px;}
+/* Content End 
+-------------------------------------------------- */
+
+
+/* footer Start 
+-------------------------------------------------- */
+.footer{background: #000000;text-align: center;padding: 20px 0 15px;}
+.footer .footer-logo{font-size: 36px;line-height: 38px;color: #ffffff;text-transform: uppercase;display: inline-block;white-space: normal;margin-bottom: 5px;}
+.footer p{font-size: 12px;color: #ffffff;text-transform: capitalize;font-family: 'Open Sans', sans-serif;margin:0;line-height: 18px;}
+
+/* footer End
+-------------------------------------------------- */
+
+/* Responsive Style Start 
+-------------------------------------------------- */
+@media(max-width:1199px){}
+
+@media(max-width:991px){
+.banner h1{font-size: 28px;line-height: 32px;padding: 23px 0;}
+.banner h2{font-size: 24px;line-height: 30px;}
+.ch-middle{padding: 25px 0 0;}
+.aboutus-home, 
+.service-home{padding: 80px 0 50px;}
+.renovation-area,
+.landscaping-area,
+.building-area{padding: 80px 0 50px;}
+.why-choose-us{padding: 42px 0 72px;}
+.service-banner{padding: 45px 0 24px;}
+.feedback{padding: 40px 0 60px;}
+}
+
+@media(max-width:767px){
+.section-title{font-size: 23px;line-height: 28px;padding: 18px 0;}
+.slj-text{font-size: 23px;line-height: 28px;margin:18px 0;}
+.content-title{padding: 0 0 18px;}
+
+.navbar-nav > li > a{padding: 5px 8px;}	
+.navbar-toggle{margin:10px 10px 0 0;border-radius: 0;}
+.navbar-toggle .icon-bar{border-radius: 0;}
+.navbar-toggle .icon-bar + .icon-bar{margin-top: 5px;}
+.navbar-default .navbar-toggle{border-color: #ffffff;}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover{background-color: #8f443d;}
+.navbar-default .navbar-toggle .icon-bar{background-color: #ffffff;}
+
+.columnSix{float: none;padding: 0 15px;width: 100%;}
+.feedback .row{margin:0 -15px;}
+.banner{padding: 50px 0;}
+.banner h1::after{right:0;margin:0 auto;}
+.bcontent-left{text-align: center;}
+.suggestion-form{margin:0 auto;}
+.content-img{text-align: left;}
+.aboutus-home, 
+.service-home,
+.building-area{padding: 20px 0 50px;}
+.renovation-area,
+.landscaping-area,
+.building-area{padding: 20px 0 50px;}
+.pull-right{float: none !important;}
+.choose-area{margin-bottom: 30px;}
+.choose-area h2{margin:24px 0;}
+.why-choose-us{padding: 42px 0;}
+.ch-left{text-align: center;}
+.ch-middle{padding: 30px 0 0;}
+.ch-right{text-align: center;margin-top: 30px;}
+.contact-home{padding: 30px 0;}
+.contact-area{padding: 42px 0;}
+.ca-left{padding-top: 0;}
+.renovation-area .col-md-6,
+.landscaping-area .col-md-6,
+.building-area .col-md-6,
+.aboutus-home .col-md-6,
+.service-home .col-md-6{padding: 0 15px;}
+.renovation-area .row,
+.landscaping-area .row,
+.building-area .row,
+.aboutus-home .row,
+.service-home .row{margin:0 -15px;}
+}
+
+@media(max-width:639px){
+.footer .footer-logo{font-size: 24px;line-height: 28px;}
+.feedback-form{margin-top: 42px;}	
+}
+
+@media(max-width:479px){
+.logo{font-size: 18px;}	
+}
+
+/* Responsive Style End
+-------------------------------------------------- */

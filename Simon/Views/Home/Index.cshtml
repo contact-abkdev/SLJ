@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="banner">
+    <div class="banner-img">
+        <img src="~/assets/images/banner.jpg" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="bcontent-left">
+                    <img src="~/assets/images/logo.png" alt="banner-logo" />
+                    <h1>slj building services</h1>
+                    <h2>BUILDING, PLUMBING, PROPERTY MAINTENANCE & LANDSCAPING</h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="bcontent-right">
+                    @Html.Partial("_GetInTouch")
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="ch-left">
+                    <h3>Contact Us Today</h3>
+                    <p>We look forward to hearing how </p>
+                    <p>we can help with your project, get in touch via:</p>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <div class="ch-middle">
+                    <ul>
+                        <li><a href="mailto:sljbuild@live.co.uk"><img src="~/assets/images/envelope-img.png" alt="" /></a></li>
+                        <li><a href="tel:+44(0)7914891261"><img src="~/assets/images/phone-img.png" alt="" /></a></li>
+                        <li><a href="/contact-us"><img src="~/assets/images/comment-img.png" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="ch-right">
+                    <ul>
+                        <li>SLJ Building Services</li>
+                        <li>47 The Crescent</li>
+                        <li>WD5 0DR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="aboutus-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="content-text">
+                    <h2 class="content-title">about us</h2>
+                    <p>SLJ Building Services have been an established name in building, plumbing, property maintenance and refurbishments for 25 years. With 25 years of industry experience, we can cater for your every need. </p>
+                    <p>Whether you are looking to extend your home, make alterations or thinking about a loft conversion, we have the expertise to undertake your project.</p>
+                    <a href="#" class="btn btn-style">Find Out More</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="content-img">
+                    <a href="/about-us"><img src="~/assets/images/about-img1.jpg" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 pull-right">
+                <div class="content-text">
+                    <h2 class="content-title">services</h2>
+                    <p>Our professional team of builders, plumbers and landscapers work closely with you to fully understand your needs. SLJ building services never compromise on quality and ensure a tailored service.</p>
+                    <p>Whether it’s a one off plumbing emergency, garden landscaping, a new driveway or a larger building project . We have the knowledge and expertise to complete the project on-time and within a budget.</p>
+                    <a href="#" class="btn btn-style">view our services</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="content-img">
+                    <a href="/services"><img src="~/assets/images/service-img1.jpg" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-choose-us">
+    <div class="container">
+        <h2 class="section-title">WHY CHOOSE SLJ BUILDING SERVICES?</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="choose-area">
+                    <div class="choose-img">
+                        <img src="~/assets/images/quality-img.png" alt="" />
+                    </div>
+                    <h2>Quality</h2>
+                    <p>We deliver projects of the highest quality while maintaining our flexibility with your budget. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="choose-area">
+                    <div class="choose-img">
+                        <img src="assets/images/efficiency-img.png" alt="" />
+                    </div>
+                    <h2>Efficiency</h2>
+                    <p>We take pride in our efficiency - we ensure that no projects over-run. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="choose-area">
+                    <div class="choose-img">
+                        <img src="assets/images/reliability-img.png" alt="" />
+                    </div>
+                    <h2>Reliability</h2>
+                    <p>If you want a reliable building service, look no further than SLJ Building Services. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="service-content">
+                    <img src="~/assets/images/logo.png" alt="service-logo" />
+                    <h2 class="slj-text">slj building services</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@Html.Partial("_GetInTouchMain")

@@ -1,0 +1,22 @@
+﻿@model Simon.Models.ContactUS
+
+<div class="suggestion-form">
+    <h3>what can we do to help ?</h3>
+    @using (Html.BeginForm("SendEnquiry", "Home"))
+    {
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name" ,required="required"})
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Email", required = "required", type="email" })
+        </div>
+        <div class="form-group">
+            @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Comments", required = "required" })
+        </div>
+
+    <button class="btn btn-submit" type="submit" id="btnSubmitInner" style="display:none;">get in touch</button>
+    }
+    <button class="btn btn-submit" type="submit" id="btnSubmitOuter">get in touch</button>
+</div>
+
+

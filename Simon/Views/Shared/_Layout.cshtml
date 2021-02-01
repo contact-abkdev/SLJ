@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SLJ Building Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Normalize core CSS -->
+    <link rel="stylesheet" href="~/assets/css/normalize.css">
+    <link rel="stylesheet" href="~/assets/css/main.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Slick Slider CSS
+    <link href="assets/css/slick.css" rel="stylesheet"/>
+    <link href="assets/css/slick-theme.css" rel="stylesheet"/> -->
+    <!-- Custom styles-->
+    <link href="~/assets/css/docs.css" rel="stylesheet" />
+    <link href="~/assets/css/css3.css" rel="stylesheet" />
+
+    <!-- Font-awesome icons-->
+    <link href="~/assets/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="~/assets/js/modernizr-3.5.0.min.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+
+        <header class="header">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><span class="logo">slj building services</span></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/">home</a></li>
+                            <li><a href="/about-us">about us</a></li>
+                            <li><a href="/services">services</a></li>
+                            <li><a href="/contact-us">contact us</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </header>
+
+        <div id="content">
+            @RenderBody()
+        </div>
+        <footer class="footer">
+            <div class="footer-area">
+                <a class="footer-logo" href="index.html"><span>slj building services</span></a>
+                <p>© @DateTime.Now.Year Luke Evans & Krishan Patel</p>
+                <p>Logo Design by Anna Chadfield</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Core Javascript -->
+    <script src="~/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!-- User agent Javascript -->
+    <script src="~/assets/js/cssua.js"></script>
+    <!--boilerplate core Javascript -->
+    <script src="~/assets/js/plugins.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <!-- Custom Javascript -->
+    <script src="~/assets/js/custom.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿@model Simon.Models.ContactUS
+@{
+    ViewBag.Title = "Contact";
+}
+
+
+@*@Html.TextBoxFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Phone)
+    @Html.TextBoxFor(m => m.Address)
+    @Html.TextAreaFor(m => m.Message)
+    <br />*@
+<section class="banner">
+    <div class="banner-img">
+        <img src="~/assets/images/banner.jpg" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="bcontent-left">
+                    <img src="~/assets/images/logo.png" alt="banner-logo" />
+                    <h1>contact us</h1>
+                    <h2>slj building serices</h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="bcontent-right">
+                    @Html.Partial("_GetInTouch")
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="ch-left">
+                    <h3>Contact Us Today</h3>
+                    <p>We look forward to hearing how </p>
+                    <p>we can help with your project, get in touch via:</p>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <div class="ch-middle">
+                    <ul>
+                        <li><a href="mailto:sljbuild@live.co.uk"><img src="~/assets/images/envelope-img.png" alt="" /></a></li>
+                        <li><a href="tel:+44(0)7914891261"><img src="~/assets/images/phone-img.png" alt="" /></a></li>
+                        <li><a href="/contact-us"><img src="~/assets/images/comment-img.png" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="ch-right">
+                    <ul>
+                        <li>SLJ Building Services</li>
+                        <li>47 The Crescent</li>
+                        <li>WD5 0DR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <div class="ca-left">
+                    <p>We look forward to hearing about how we can help with your project.</p>
+                    <p>Feel free to give us a call on my mobile, which you can find on the right. Or if you’d prefer to drop me an email, please send us an enquiry via the contact form below. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="ca-right">
+                    <ul>
+                        <li>SLJ Building Services</li>
+                        <li>47 The Crescent</li>
+                        <li>WD5 0DR</li>
+                    </ul>
+                    <ul>
+                        <li><a href="tel:+44(0)7914891261"> 07914 891 261</a></li>
+                        <li><a href="tel:+44(0)1923448933">01923 448933</a></li>
+                    </ul>
+                    <a href="mailto:sljbuild@live.co.uk">sljbuild@live.co.uk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@Html.Partial("_GetInTouchMain")
